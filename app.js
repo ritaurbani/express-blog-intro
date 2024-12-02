@@ -5,7 +5,8 @@ const port = 3000;
 
 const posts = require("./posts")
 
-app.use(express.static("public"))
+app.use(express.static("public"));
+
 
 app.get("/", (req, res) =>{
     res.send ("Server del mio blog")
@@ -23,4 +24,4 @@ app.get("/bacheca", (req, res) => {
 
 app.listen(port, () =>{
     console.log("Start")
-})
+});
